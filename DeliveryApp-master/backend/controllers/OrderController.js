@@ -4,7 +4,7 @@ import Stripe from "stripe";
 
 const placeOrder = async (req, res) => {
 
-    const frontend_url = "https://tomato-1-xng7.onrender.com"
+    const frontend_url = "https://tomato-admin-w6dy.onrender.com"
 
     const stripe = new Stripe(process.env.STRIPE_KEY);
     try {
