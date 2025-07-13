@@ -1,0 +1,82 @@
+.placeorder {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 2rem;
+}
+
+.placeorderleft {
+    width: 700px;
+    /* position: relative; */
+}
+.placeorderright{
+    width: 100%;
+    max-width: max(40%,500px);
+}
+
+.placeorderleft .title {
+    font-size: 40px;
+    margin-bottom: 1.3rem;
+    font-weight: bold;
+}
+
+.placeorderright button {
+    background-color: tomato;
+    width: max(13vw, 300px);
+    border: none;
+    color: white;
+    padding: 12px 0;
+margin-top: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.placeorderright hr {
+    margin: 10px 0px;
+}
+
+.placeorderright .cart-checkout-main {
+    margin: 20px;
+}
+
+.placeorderleft .multifields {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    gap: 10px;
+
+
+}
+
+.placeorderleft .multifields input {
+    height: 3rem;
+    padding: 10px;
+    flex: 1;
+}
+
+
+.placeorderleft input {
+    height: 3rem;
+    width: 100%;
+
+}
+.placeorderleft  input{
+    margin-top: 5px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    border: 1px solid gray ;
+}
+
+@media screen and (max-width:1110px){
+    .placeorderleft {
+        width: 100%;
+        /* position: relative; */
+    }
+    .placeorder{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,27 @@
+.list-heading{
+    font-size: 2rem;;
+    color: black;
+}
+.list-table-format{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap:12px;
+    padding: 12px 15px;
+    border:1px solid #cacaca;
+    font-size: 13px;
+}
+.title{
+    font-size:1.2rem;
+    color: black;
+}
+.list-table-format img{
+    width: 60px;
+}
+.content p{
+    /* color: rebeccapurple; */
+    font-size: 1.3rem;
+}
+.cursur{
+    cursor: pointer;
+}
