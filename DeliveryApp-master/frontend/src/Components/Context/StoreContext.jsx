@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 export const StoreContext = createContext(null);
 
 const ContextProvider = (props) => {
-    const url = import.meta.env.VITE_API_URL || "http://localhost:4000";
+    const url = "https://tomato-ojns.onrender.com/" || "http://localhost:4000";
 
     const [token, setToken] = useState("");
     const [cartItems, setCartItems] = useState({});
