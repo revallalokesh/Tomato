@@ -9,7 +9,10 @@ const app = express();
 const PORT = 4000;
 connectDB();
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: "https://tomato-1-xng7.onrender.com", // Your frontend domain
+    credentials: true
+}));
 
 
 app.use("/api/food", foodRouter)
