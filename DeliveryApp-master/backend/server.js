@@ -10,7 +10,10 @@ const PORT = 4000;
 connectDB();
 app.use(express.json())
 app.use(cors({
-    origin: "https://tomato-1-xng7.onrender.com", // Your frontend domain
+    origin: [
+        "https://tomato-1-xng7.onrender.com", // User frontend
+        "https://tomato-admin-w6dy.onrender.com" // Admin frontend
+    ],
     credentials: true
 }));
 
